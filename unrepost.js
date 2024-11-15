@@ -3,9 +3,8 @@ let index = 0;
 const total = buttons.length;
 
 function clickButton() {
-  // Deja el último repost sin eliminar
   buttons[index].click();
-  console.log(`Deleting repost ${index + 1} of ${total - 1}`);
+  console.log(`Deleting repost ${index + 1} of ${total}`);
   index++;
   setTimeout(() => {
     const interval = setInterval(() => {
